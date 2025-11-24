@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://microsoft.github.io/vscode-codicons/dist/codicon.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .header-container {
+            display: flex;
+            width: 100%;
+            padding: 20px 0px;
+            background-color: black;
+        }
+
+        .header-div-container {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .header-div-one {
+            padding: 10px 20px;
+            display: flex;
+            gap: 30px;
+            /* background-color: rebeccapurple; */
+        }
+
+        .header-div-two {
+            padding: 10px 20px;
+            /* border: thin solid whitesmoke; */
+            /* background-color: aqua; */
+        }
+        
+        .uba-logo{
+            width: 20px;
+        }
+        .border-one {
+            padding: 0px 20px;
+        }
+
+        .first-img {
+            padding-top: 20px;
+            margin: auto;
+            width: -100px;
+        }
+
+        .first-p {
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 570;
+            line-height: 24px;
+            color: rgb(213, 23, 9);
+        }
+
+        .about-us {
+            font-family: "UBA Sans", Roboto, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 24px;
+            color: white;
+        }
+
+        .Investors {
+            font-family: "UBA Sans", Roboto, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 24px;
+            color: white;
+        }
+
+        .Impact {
+            font-family: "UBA Sans", Roboto, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 24px;
+            color: white;
+        }
+
+        .Media {
+            font-family: "UBA Sans", Roboto, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 24px;
+            color: white;
+        }
+
+        .Support {
+            font-family: "UBA Sans", Roboto, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 24px;
+            color: white;
+        }
+
+        .Global {
+            font-family: "UBA Sans", Roboto, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 24px;
+            color: white;
+        }
+
+        /* .search{
+
+        } */
+
+        .first-h1 {
+            padding-top: 5px;
+            width: 400px;
+            font-family: "UBA Sans", Roboto, sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 60px;
+            color: white;
+        }
+
+        .second-p {
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            width: 390px;
+            color: white;
+        }
+
+        .uba-image img {
+            width: 600px;
+        }
+
+        .uba-image {
+            background-color: #F5F5F5;
+            border-radius: 20px;
+            margin-right: 30px;
+            margin-top: 60px;
+        }
+
+        .flex-three {
+            display: flex;
+            gap: 100px;
+        }
+
+        .bt-one {
+            padding-top: 10px;
+        }
+
+        .Login {
+            padding: 10px 20px;
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 550;
+            line-height: 24px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            background-color: rgb(244, 68, 54);
+            background-image: linear-gradient(90deg, white, white);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            background-position: left;
+            transition: background-size 0.35s ease-out, color 0.35s ease-out;
+        }
+
+        .Login:hover {
+            background-size: 100% 100%;
+            color: #F7695F;
+        }
+
+        .open-an-account {
+            padding: 10px 20px;
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 550;
+            line-height: 24px;
+            color: black;
+            border: thin solid rgb(234, 234, 234);
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            background-image: linear-gradient(90deg, rgb(244, 68, 54), rgb(244, 68, 54));
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+            transition: background-size 0.40s ease-out, color 0.35s ease-out;
+        }
+         .open-an-account:hover {
+            background-size: 100% 100%;
+            color: black;
+            border: none;
+        }
+       
+
+        @media (max-width:980px) {
+            .flex-three {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .uba-image {
+                width: 90%;
+                margin: auto;
+                flex-direction: column;
+            }
+
+            .uba-image img {
+                width: 100%;
+            }
+
+            .first-p {
+                margin: auto;
+                width: 90%;
+            }
+
+            .second-p {
+                font-family: Roboto, sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                width: 90%;
+                margin: auto;
+                line-height: 28px;
+                color: rgb(0, 0, 0);
+            }
+
+            .bt-one {
+                margin: auto;
+                width: 90%;
+            }
+
+            .first-h1 {
+                margin: auto;
+                width: 90%;
+                flex-direction: row;
+            }
+
+            .first-img {
+                margin: auto;
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-div-container">
+                <div class="header-div-one">
+                    <i class="hhh codicon codicon-home" style="color: #F5F5F5; font-size: 20px;"></i>
+                    <div>
+                        <a class="about-us" href="">About Us <i class="codicon codicon-chevron-down"
+                                style="color: #F5F5F5; font-size: 10px;"></i></a>
+                    </div>
+                    <div>
+                        <a class="Investors" href="">Investors <i class="codicon codicon-chevron-down"
+                                style="color: #F5F5F5; font-size: 10px;"></i></a>
+                    </div>
+                    <div>
+                        <a class="Impact" href="">Our Impact <i class="codicon codicon-chevron-down"
+                                style="color: #F5F5F5; font-size: 10px;"></i></a>
+                    </div>
+                    <div>
+                        <a class="Media" href="">Media <i class="codicon codicon-chevron-down"
+                                style="color: #F5F5F5; font-size: 10px;"></i></a>
+                    </div>
+                    <div>
+                        <a class="Support" href="">Support <i class="codicon codicon-chevron-down"
+                                style="color: #F5F5F5; font-size: 10px;"></i></a>
+                    </div>
+                    <div>
+                        <a class="Global" href="">Global Reach <i class="codicon codicon-chevron-down"
+                                style="color: #F5F5F5; font-size: 10px;"></i></a>
+                    </div>
+                    <i class="codicon codicon-search" style="color: rgb(196, 63, 63); font-size: 30px;"></i>
+                    <img src="../uba images/global.svg" alt="">
+                </div>
+                <div class="header-div-two">
+                    <!-- <div class="border-one"> -->
+                    <i class="codicon codicon-lock-small"
+                        style="color: red; font-size: 20px; border: thick solid blue;"></i>
+                        <img class="uba-logo" src="../uba images/imgi_97_UBA-Logo.svg" alt="">
+                    <!-- </div> -->
+                    
+                </div>
+            </div>
+        </div>
+        <hr style="color: blue; font-size: 20px; margin-top: 5px;">
+
+    </header>
+    <section>
+        <div class="flex-three">
+            <div class="first-img">
+                <p class="first-p">UBA Internet Banking</p>
+                <h1 class="first-h1">Online banking that’s easy and efficient</h1>
+                <p class="second-p">From fund transfers to bill payments, our online platform offers a range of features
+                    designed to make banking simple, fast, and accessible.</p>
+                <div class="bt-one">
+                    <button class="Login">Login</button>
+                    <button class="open-an-account">Open an account</button>
+                </div>
+            </div>
+            <div class="uba-image">
+                <img class="ii" src="../uba images/imgi_100_internet-1536x995.webp" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
